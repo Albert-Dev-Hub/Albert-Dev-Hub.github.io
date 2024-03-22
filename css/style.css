@@ -36,7 +36,7 @@
   min-height: 100vh;
   background-color: var(--bio-bg-color);
   text-align: center;
-  padding: 30px 30px;
+  padding: 30px 25px;
   border-right: 5px solid var(--bio-border-color);
 }
 
@@ -75,6 +75,11 @@ margin-bottom: 20px;
   margin-bottom: 25px;
   padding-bottom: 25px;
 }
+/*aqui*/
+#social-container li{
+  flex: 1 1 0;
+  max-width: 60px;
+}
 
 #social-container li a{
 color: var(--main-color);
@@ -101,7 +106,7 @@ font-size: 30px;
   color: var(--main-color);
   font-size: 20px;
   margin-right:5px;
-  max-width: 15px;
+  max-width: 20px;
 }
 
 /* About container */
@@ -186,6 +191,7 @@ font-size: 30px;
 
 /* Mobile */
 @media(max-width: 450px){
+  
   #container{
     flex-direction: column;
   }
@@ -194,10 +200,10 @@ font-size: 30px;
     border-right: none;
     border-bottom: 5px solid var(--bio-border-color);
   }
-  #bio-container{
+  #bio-container h2{
     display: none;
   }
-  #bio-container{
+  #bio-container p{
     max-width: 60%;
     margin: 10px auto;
   }
@@ -210,17 +216,19 @@ font-size: 30px;
     max-width: 100%;
     line-height: 26px;
   }
-  #btn-project{
-    margin: 20px auto;
+  
+  #btn-projects{
+   margin-left:100px;
   }
+  
   .skills-box{
     flex: 1 1 100%;
     max-width: 100%;
     margin-bottom: 40px;
     text-align: left;
   }
-  .s
-skills-box i {
+  
+  .skills-box i {
   font-size: 60px;
-}
+ }
 }
